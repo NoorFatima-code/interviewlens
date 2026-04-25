@@ -23,7 +23,7 @@ To run this application, you need to configure the following secrets in your env
 
 ```env
 # Required for AI analysis
-GEMINI_API_KEY=AIzaSyDb7waDjY9dlfHxsFi_VZCEKvW_XPFhfgo
+GEMINI_API_KEY=your_api_key_here
 
 
 
