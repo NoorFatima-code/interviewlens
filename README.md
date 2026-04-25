@@ -1,20 +1,52 @@
-<div align="center">
-<img width="1200" height="475" alt="GHBanner" src="https://github.com/user-attachments/assets/0aa67016-6eaf-458a-adb2-6e31a0763ed6" />
-</div>
+# INTERVIEW.AI - AI-Powered Interview Coach
 
-# Run and deploy your AI Studio app
+INTERVIEW.AI is a high-end, production-grade interview practice platform that uses the Gemini 3 Flash model to provide deep, analytical feedback on your interview performance.
 
-This contains everything you need to run your app locally.
+## 🚀 Features
 
-View your app in AI Studio: https://ai.studio/apps/fdc8a363-92ed-445c-a0c5-ae5c90783e89
+- **Real-time Voice/Text Practice**: Conduct mock interviews using your microphone or keyboard.
+- **Deep AI Analysis**: Get detailed feedback on "substance vs fluff", weaknesses, and a STAR-method improved version of your answers.
+- **Career Consultant Verdict**: A final report with job fit prediction, growth areas, and a personalized improvement plan.
+- **Session History**: Securely save all your practice sessions via Firebase to track your progress over time.
+- **Modern UI**: A polished, responsive interface built with Tailwind CSS and Motion for smooth transitions.
 
-## Run Locally
+## 🛠️ Tech Stack
 
-**Prerequisites:**  Node.js
+- **Frontend**: React 18, Vite, Tailwind CSS, Motion (Framer Motion)
+- **Backend Proxy**: Express.js (for serving questions and assets)
+- **AI Engine**: Google Gemini API (`gemini-3-flash-preview`)
+- **Database & Auth**: Firebase Firestore & Google Authentication
+
+## 🔑 Environment Variables
+
+To run this application, you need to configure the following secrets in your environment:
+
+```env
+# Required for AI analysis
+GEMINI_API_KEY=AIzaSyDb7waDjY9dlfHxsFi_VZCEKvW_XPFhfgo
 
 
-1. Install dependencies:
-   `npm install`
-2. Set the `GEMINI_API_KEY` in [.env.local](.env.local) to your Gemini API key
-3. Run the app:
-   `npm run dev`
+
+
+## 📦 Installation & Setup
+
+1. **Clone the repository.**
+2. **Install dependencies**:
+   ```bash
+   npm install
+   ```
+3. **Configure Secrets**: Add your `GEMINI_API_KEY` to the project secrets.
+4. **Run Development Server**:
+   ```bash
+   npm run dev
+   ```
+
+## 📖 How to Practice
+
+1. **Personalize**: Choose your target Role (e.g., Software Engineer) and Level (e.g., Senior).
+2. **Interview**: Answer 5 generated behavioral and technical questions. You can use **Voice Mode** for a more realistic feel.
+3. **Analyze**: Once finished, wait a few seconds for the AI to "bulk evaluate" your entire session.
+4. **Review**: Check your individual answer scores and the final "Consultant Verdict" in the History tab.
+
+---
+Built with ❤️ using Google AI Studio.
