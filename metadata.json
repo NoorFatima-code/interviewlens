@@ -1,0 +1,6 @@
+{
+  "name": "InterviewLens",
+  "description": "An AI-powered 5-round mock interview dashboard with difficulty levels. Analyzes substance, detects fluff, and predicts hiring success with deep technical insights.",
+  "requestFramePermissions": ["microphone"],
+  "majorCapabilities": []
+}
